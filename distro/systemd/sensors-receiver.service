@@ -1,0 +1,10 @@
+[Unit]
+Description=The Sensors Receiver
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/sensors-receiver
+ExecStart=/usr/bin/python3 -u -m sensors.receiver -c /etc/sensors-receiver.conf
+
+[Install]
+WantedBy=default.target

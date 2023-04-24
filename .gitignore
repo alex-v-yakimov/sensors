@@ -1,0 +1,10 @@
+.idea
+.vscode
+*.pyc
+*.pyo
+.*.swp
+.mypy_cache/
+.tox/
+.eggs/
+*.egg-info/
+.coverage

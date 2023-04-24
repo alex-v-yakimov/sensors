@@ -1,0 +1,10 @@
+[Unit]
+Description=The Sensors Sender
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/sensors-sender
+ExecStart=/usr/bin/python3 -u -m sensors.sender -c /etc/sensors-sender.conf
+
+[Install]
+WantedBy=default.target
